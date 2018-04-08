@@ -1,4 +1,4 @@
 import './main.css'
 import './greet.scss'
-const greet = require('./greet'); // 注意,这里的sub其实是获取了sub.js里的generateText这个function
-document.querySelector("#root").appendChild(greet());
+const greetDiv = require('./greet'); // 注意,这里的greet其实是获取了greet.js里的generateText这个function
+document.querySelector("#root").appendChild(greetDiv()); // 调用greet()实则是返回了一个div(HTMLElement)
